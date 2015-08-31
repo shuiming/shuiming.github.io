@@ -2,7 +2,7 @@
 
 title: Shuming's Tech Blog
 description:
-logo: bio-photo.png# 120x120 px default image used for Twitter summary card
+logo: # 120x120 px default image used for Twitter summary card
 teaser: /teaser/default.jpg# 400x250 px default teaser image used in image archive grid
 locale:
 url: http://shuiming.github.io
@@ -29,7 +29,7 @@ owner:
     ad-client: 
     ad-slot: 
   bio: 
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+  avatar: bio-photo.png # 160x160 px image for author byline
 disqus-shortname: shuiming
 
 
