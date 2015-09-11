@@ -1,8 +1,9 @@
 ---
 layout: article
 title: "INSTALL_FAILED_DUPLICATE_PERMISSION错误"
-modified:
+modified: 2015-09-11T15:09:50+08:00
 categories: android
+comments: true
 date: 2015-09-10T21:25:44+08:00
 ---
 
