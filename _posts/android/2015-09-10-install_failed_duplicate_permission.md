@@ -16,7 +16,7 @@ date: 2015-09-10T21:25:44+08:00
 
 上面代码只是google给出的一个例子，如果直接拷贝到代码中，就有可能遇到重复的问题，因为其他开发者也有可能直接复制这段代码。
 
-如果使用Android Studio开发，可以使用gradle的变量`applicationId`去自动替换前缀，当然也可以使用`manifestPlaceHolders`
+如果使用Android Studio开发，可以使用gradle的变量`applicationId`去自动替换前缀。 如果不是gradle自带变量，可以自定义`manifestPlaceHolders`
 
 	<permission android:name="${applicationId}.permission.C2D_MESSAGE"
         	android:protectionLevel="signature" />
@@ -28,7 +28,7 @@ library的`AndroidManifest.xml`
 
 
     <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    	package="com.tencent.example.aaa" >
+    	package="com.example.aaa" >
 
 	    <uses-permission android:name="com.example.bbb.permission.XXXXX"/>
 	
@@ -59,7 +59,7 @@ library的`AndroidManifest.xml`
 	        android:theme="@style/AppTheme" >
 	
 	        <service
-	            android:name="com.tencent.example.aaa.service.MyService"
+	            android:name="com.example.aaa.service.MyService"
 	            android:enabled="true"
 	            android:exported="true"
 	            android:permission="com.example.bbb.permission.XXXXX"

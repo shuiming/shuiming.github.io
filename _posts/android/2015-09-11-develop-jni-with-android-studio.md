@@ -83,7 +83,7 @@ Android Studio是google官方建议使用的IDE工具，功能强大，目前最
 
 之后就可以在命令行中执行`ndk-build`命令，so文件会编译到`src/main/libs`目录。需要注意的是，如果修改了C/C++代码，需要再次手动执行`ndk-build`，否则apk打包的so可能是旧的。
 
-当然，也可以定义一个gradle的task：
+如果不想每次都在命令行执行`ndk-build`，可以定义一个gradle的task：
 
 	task ndkBuild(type: Exec) {
         String osName = System.getProperty("os.name").toLowerCase();
